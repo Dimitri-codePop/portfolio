@@ -1,8 +1,8 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/portfolio">Portfolio</router-link>
+    <router-link to="/" class="nav">Home</router-link> 
+    <router-link to="/about" class="nav">About</router-link> 
+    <router-link to="/portfolio" class="nav">Portfolio</router-link>
   </div>
   <router-view/>
   <Footer />
@@ -28,21 +28,25 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: beige;
+  background-color:rgb(13, 9, 46);
   height: 100vh;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 #nav {
   padding: 30px;
 }
 
+.nav{
+  margin-left: 30px;
+}
+
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #fdfeff;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #3590bb;
 }
 </style>
